@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تحميل التطبيق</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      font-family: "Cairo", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+      color: #fff;
+      background: linear-gradient(180deg, #1a0b3d 0%, #2a1260 50%, #1a0b3d 100%);
+      background-attachment: fixed;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 40px 28px 36px;
+      text-align: center;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .app-icon {
+      display: block;
+      width: 130px;
+      height: 130px;
+      margin: 28px auto 30px;
+      object-fit: cover;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 35px rgba(139, 92, 246, 0.55);
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      font-family: inherit;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 16px;
+      background: #8b5cf6;
+      box-shadow: 0 8px 24px rgba(139, 92, 246, 0.45);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .download-btn:hover { background: #9d74f8; transform: translateY(-2px); }
+    .download-btn:active { transform: translateY(0); }
+
+    .contact {
+      margin-top: 36px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-title {
+      margin-bottom: 16px;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+    .contact-icons a:hover { transform: translateY(-3px) scale(1.05); }
+
+    .contact-icons img {
+      width: 58%;
+      height: 58%;
+      object-fit: contain;
+    }
+
+    /* مربع أخضر – واتساب */
+    .whatsapp { background: #25d366; }
+
+    /* نفس تدرّج لون أيقونة إنستغرام */
+    .instagram {
+      background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>ROMIRO</h1>
+    <p class="subtitle"></p>
+
+    <img class="app-icon" src="robotff.jpg" alt="أيقونة التطبيق">
+
+    <!-- غيّر رابط التحميل (href) إلى ملف تطبيقك -->
+    <a class="download-btn" href="app.apk" download>تحميل</a>
+
+    <section class="contact">
+      <p class="contact-title">للتواصل معي</p>
+      <div class="contact-icons">
+        <a class="whatsapp" href="https://wa.me/213667317298" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="watss.svg" alt="">
+        </a>
+        <a class="instagram" href="https://instagram.com/romiro.dz" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="Insta.svg" alt="">
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
